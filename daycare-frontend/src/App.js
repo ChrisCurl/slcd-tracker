@@ -142,7 +142,7 @@ export default function DaycarePNO() {
 
   const getSpotText = (date) => {
     if (!availability[date]) return '?/6';
-    const { totalKidsBooked, spotsLeft } = availability[date];
+    const { totalKidsBooked } = availability[date];
     return `${totalKidsBooked}/6`;
   };
 
